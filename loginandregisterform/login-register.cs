@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -64,21 +64,31 @@ namespace loginandregisterform
                 //Database i okuma
                 MySqlDataReader myReader;
                 myReader = SelectCommand.ExecuteReader();
-
-                bool userAvailable = false;
-                while (myReader.Read())
-                    userAvailable = true;
-
-                if (userAvailable)
-                    MessageBox.Show("Access Granted");
+                if (myReader.HasRows)
+                {
+                 while (myReader.Read())
+                  {
+                    if(myReader["useryetki"].ToString() == "1")
+                        {
+                            MessageBox.Show("Admin Giriş Sayfasına Yönlendirme");
+                        }
+                    else
+                        {
+                            MessageBox.Show("Admin değilsiniz");
+                        }
+                  }
+                }
                 else
-                    MessageBox.Show("Incorrect username or password");
+                {
+                    myConn.Close();
+                    MessageBox.Show("Username or Password incorrect");
+                }
 
-                myConn.Close();
-            }
+             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                MessageBox.Show("Databaseye bağlanamadı");
             }
 
         }
@@ -104,7 +114,7 @@ namespace loginandregisterform
                 while (myReader.Read()) { }
                 MessageBox.Show("Kayit Başarılı");
                 myConn.Close();
-
+               
             }
             catch (Exception ex)
             {

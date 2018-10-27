@@ -16,8 +16,9 @@ namespace loginandregisterform
         public Form1()
         {
             InitializeComponent();
+            
+
         }
-        //iki sayfa arası geçiş butonları
         private void butongirisgecis_Click(object sender, EventArgs e)
         {          
             if(slideB.Left==542)
@@ -70,7 +71,13 @@ namespace loginandregisterform
                   {
                     if(myReader["useryetki"].ToString() == "1")
                         {
-                            MessageBox.Show("Admin Giriş Sayfasına Yönlendirme");
+                            //MessageBox.Show("Admin Giriş Sayfasına Yönlendirme");
+
+                            Form gecis = new controlpanel();
+                            gecis.Show();
+                            this.Hide();
+
+
                         }
                     else
                         {

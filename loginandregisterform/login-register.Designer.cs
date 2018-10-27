@@ -43,19 +43,19 @@
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.slideA = new System.Windows.Forms.Panel();
+            this.boxuserkontrolbutton = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtage = new System.Windows.Forms.TextBox();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.butonkayit = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.butongirisgecis = new Bunifu.Framework.UI.BunifuThinButton2();
             this.butonkayitgecis = new Bunifu.Framework.UI.BunifuThinButton2();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.txtage = new System.Windows.Forms.TextBox();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.boxuserkontrolbutton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1.SuspendLayout();
             this.slideB.SuspendLayout();
             this.slideA.SuspendLayout();
@@ -256,6 +256,55 @@
             this.slideA.Size = new System.Drawing.Size(469, 453);
             this.slideA.TabIndex = 3;
             // 
+            // boxuserkontrolbutton
+            // 
+            this.boxuserkontrolbutton.ActiveBorderThickness = 1;
+            this.boxuserkontrolbutton.ActiveCornerRadius = 1;
+            this.boxuserkontrolbutton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.boxuserkontrolbutton.ActiveForecolor = System.Drawing.Color.White;
+            this.boxuserkontrolbutton.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.boxuserkontrolbutton.BackColor = System.Drawing.Color.Transparent;
+            this.boxuserkontrolbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("boxuserkontrolbutton.BackgroundImage")));
+            this.boxuserkontrolbutton.ButtonText = "Box User Bilgileri Getir";
+            this.boxuserkontrolbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.boxuserkontrolbutton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxuserkontrolbutton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.boxuserkontrolbutton.IdleBorderThickness = 1;
+            this.boxuserkontrolbutton.IdleCornerRadius = 1;
+            this.boxuserkontrolbutton.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.boxuserkontrolbutton.IdleForecolor = System.Drawing.Color.White;
+            this.boxuserkontrolbutton.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.boxuserkontrolbutton.Location = new System.Drawing.Point(59, 158);
+            this.boxuserkontrolbutton.Margin = new System.Windows.Forms.Padding(5);
+            this.boxuserkontrolbutton.Name = "boxuserkontrolbutton";
+            this.boxuserkontrolbutton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.boxuserkontrolbutton.Size = new System.Drawing.Size(348, 47);
+            this.boxuserkontrolbutton.TabIndex = 15;
+            this.boxuserkontrolbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.boxuserkontrolbutton.Click += new System.EventHandler(this.boxuserkontrolbutton_Click);
+            // 
+            // txtage
+            // 
+            this.txtage.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtage.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtage.Location = new System.Drawing.Point(138, 118);
+            this.txtage.Multiline = true;
+            this.txtage.Name = "txtage";
+            this.txtage.Size = new System.Drawing.Size(54, 32);
+            this.txtage.TabIndex = 14;
+            this.txtage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // bunifuCustomLabel7
+            // 
+            this.bunifuCustomLabel7.AutoSize = true;
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(135, 79);
+            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(30, 16);
+            this.bunifuCustomLabel7.TabIndex = 13;
+            this.bunifuCustomLabel7.Text = "Age";
+            // 
             // butonkayit
             // 
             this.butonkayit.ActiveBorderThickness = 1;
@@ -283,6 +332,17 @@
             this.butonkayit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.butonkayit.Click += new System.EventHandler(this.butongiris_Click);
             // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(56, 315);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(88, 16);
+            this.bunifuCustomLabel4.TabIndex = 7;
+            this.bunifuCustomLabel4.Text = "Email-Adress";
+            // 
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
@@ -304,17 +364,6 @@
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(46, 16);
             this.bunifuCustomLabel6.TabIndex = 9;
             this.bunifuCustomLabel6.Text = "Box İd";
-            // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(56, 315);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(88, 16);
-            this.bunifuCustomLabel4.TabIndex = 7;
-            this.bunifuCustomLabel4.Text = "Email-Adress";
             // 
             // bunifuCustomLabel3
             // 
@@ -356,7 +405,8 @@
             this.butongirisgecis.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.butongirisgecis.ActiveForecolor = System.Drawing.Color.White;
             this.butongirisgecis.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.butongirisgecis.BackColor = System.Drawing.Color.Transparent;
+            this.butongirisgecis.BackColor = System.Drawing.SystemColors.Control;
+            this.butongirisgecis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butongirisgecis.BackgroundImage")));
             this.butongirisgecis.ButtonText = "Sign In";
             this.butongirisgecis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butongirisgecis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -381,7 +431,8 @@
             this.butonkayitgecis.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.butonkayitgecis.ActiveForecolor = System.Drawing.Color.White;
             this.butonkayitgecis.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.butonkayitgecis.BackColor = System.Drawing.Color.Transparent;
+            this.butonkayitgecis.BackColor = System.Drawing.SystemColors.Control;
+            this.butonkayitgecis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butonkayitgecis.BackgroundImage")));
             this.butonkayitgecis.ButtonText = "Sign Up";
             this.butonkayitgecis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.butonkayitgecis.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -398,55 +449,6 @@
             this.butonkayitgecis.TabIndex = 0;
             this.butonkayitgecis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.butonkayitgecis.Click += new System.EventHandler(this.butonkayitgecis_Click);
-            // 
-            // txtage
-            // 
-            this.txtage.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtage.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtage.Location = new System.Drawing.Point(138, 118);
-            this.txtage.Multiline = true;
-            this.txtage.Name = "txtage";
-            this.txtage.Size = new System.Drawing.Size(54, 32);
-            this.txtage.TabIndex = 14;
-            this.txtage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // bunifuCustomLabel7
-            // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuCustomLabel7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(135, 79);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(30, 16);
-            this.bunifuCustomLabel7.TabIndex = 13;
-            this.bunifuCustomLabel7.Text = "Age";
-            // 
-            // boxuserkontrolbutton
-            // 
-            this.boxuserkontrolbutton.ActiveBorderThickness = 1;
-            this.boxuserkontrolbutton.ActiveCornerRadius = 1;
-            this.boxuserkontrolbutton.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.boxuserkontrolbutton.ActiveForecolor = System.Drawing.Color.White;
-            this.boxuserkontrolbutton.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.boxuserkontrolbutton.BackColor = System.Drawing.Color.Transparent;
-            this.boxuserkontrolbutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("boxuserkontrolbutton.BackgroundImage")));
-            this.boxuserkontrolbutton.ButtonText = "Box User Bilgileri Getir";
-            this.boxuserkontrolbutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boxuserkontrolbutton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxuserkontrolbutton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.boxuserkontrolbutton.IdleBorderThickness = 1;
-            this.boxuserkontrolbutton.IdleCornerRadius = 1;
-            this.boxuserkontrolbutton.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.boxuserkontrolbutton.IdleForecolor = System.Drawing.Color.White;
-            this.boxuserkontrolbutton.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.boxuserkontrolbutton.Location = new System.Drawing.Point(59, 158);
-            this.boxuserkontrolbutton.Margin = new System.Windows.Forms.Padding(5);
-            this.boxuserkontrolbutton.Name = "boxuserkontrolbutton";
-            this.boxuserkontrolbutton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.boxuserkontrolbutton.Size = new System.Drawing.Size(348, 47);
-            this.boxuserkontrolbutton.TabIndex = 15;
-            this.boxuserkontrolbutton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.boxuserkontrolbutton.Click += new System.EventHandler(this.boxuserkontrolbutton_Click);
             // 
             // Form1
             // 

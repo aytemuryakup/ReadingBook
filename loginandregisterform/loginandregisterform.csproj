@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controlpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controlpanel.Designer.cs">
+      <DependentUpon>controlpanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="login-register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="controlpanel.resx">
+      <DependentUpon>controlpanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login-register.resx">
       <DependentUpon>login-register.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +95,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
